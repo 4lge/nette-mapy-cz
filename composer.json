@@ -1,5 +1,5 @@
 {
-  "name": "occ2/nette-mapy-cz",
+  "name": "4lge/nette-mapy-cz",
   "description": "Map control and form map picker based on MAPY.CZ API for Nette Framework",
   "minimum-stability": "stable",
   "license": "MIT",
