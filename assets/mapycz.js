@@ -152,10 +152,10 @@ MapyCZ.MapPicker = class extends MapyCZ.BaseMap
 
 
     /**
-     * get Output element
+     * get ID of Output element
      */
-    getInput = () => {
-        return this.document.getElementById(this.settings.formControlId);
+    getFormControlId = () => {
+        return this.settings.formControlId;
     }
 
     /**
@@ -182,6 +182,7 @@ MapyCZ.MapPicker = class extends MapyCZ.BaseMap
         let latitude = coords.toWGS84()[1];
         let longitude = coords.toWGS84()[0];
         gpsInput.value = latitude.toString() + " " + longitude.toString();
+        $("#"+this.settings.formControlId).autosizeInput();
     };
 
     /**

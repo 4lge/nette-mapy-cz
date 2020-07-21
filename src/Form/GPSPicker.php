@@ -64,7 +64,6 @@ class GPSPicker extends TextInput
             console.log(settings);
             const mapPicker = MapyCZ.Factory.createMapPicker(document, settings);
 	    mapPicker.init();
-            alert(mapPicker.getInput())//.autosizeInput();
             '
         );
         return (Html::el("div"))->addHtml($map)->addHtml($control)->addHtml($script);
