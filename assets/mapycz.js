@@ -150,6 +150,14 @@ MapyCZ.MapPicker = class extends MapyCZ.BaseMap
         this.map.getSignals().addListener(this.window, "map-click", this.pickGPS);
     }
 
+
+    /**
+     * get Output element
+     */
+    getInput = () => {
+        return this.document.getElementById(this.settings.formControlId);
+    }
+
     /**
      * pick GPS coordinates, add into input and set marker
      * @param e

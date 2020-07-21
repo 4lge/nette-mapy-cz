@@ -1,4 +1,12 @@
 <div id="{$settings['mapId']}"></div>
+<div id="{$settings['mapId']}-control">
+    <select>
+        <option>Základní</option>
+        <option>Letecká</option>
+        <option>Turistická</option>
+        <option>Zimní</option>
+    </select>
+</div>
 <script type="text/javascript">
     const settings = JSON.parse({$settings|json});
     const mapControl = MapyCZ.Factory.createMapControl(document, settings);
